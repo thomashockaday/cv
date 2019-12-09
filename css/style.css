@@ -1,0 +1,81 @@
+/* Variables */
+:root {
+  --dark-blue: #236ea8;
+  --light-blue: #279dbb;
+  --light-grey: #888;
+}
+
+/* Simple Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+html {
+  font-size: 1.3vw;
+}
+
+/* Everything Else */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  color: #111;
+  padding: 8.4%; /* Roughly A4 */
+}
+
+h1, header h3 {
+  font-size: 2.2rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: var(--dark-blue);
+}
+
+a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+a:hover, a:active, a:focus {
+  color: var(--light-blue);
+}
+
+span {
+  color: var(--light-grey);
+}
+
+ul {
+  list-style-position: inside;
+}
+
+p, ul {
+  margin-bottom: 1.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 5%;
+  margin-top: 1.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
