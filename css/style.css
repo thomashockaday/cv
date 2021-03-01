@@ -45,6 +45,7 @@ a {
   color: var(--dark-blue);
   text-decoration: none;
   border-bottom: 1px solid currentColor;
+  word-break: break-all;
 }
 
 a:hover, a:active, a:focus {
@@ -70,12 +71,18 @@ p, ul {
   margin-top: 1.2rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   html {
     font-size: 16px;
   }
 
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1, header h3 {
+    font-size: 1.8rem;
   }
 }
