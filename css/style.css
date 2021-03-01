@@ -27,9 +27,14 @@ body {
   padding: 8.4%; /* Roughly A4 */
 }
 
-h1, header h3 {
+h1, .subtitle {
   font-size: 2.2rem;
   line-height: 1.6;
+}
+
+.subtitle {
+  color: var(--dark-blue);
+  font-weight: bold;
 }
 
 h2 {
@@ -82,7 +87,7 @@ p, ul {
 }
 
 @media only screen and (max-width: 450px) {
-  h1, header h3 {
+  h1, .subtitle {
     font-size: 1.8rem;
   }
 }
