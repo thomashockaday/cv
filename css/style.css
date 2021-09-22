@@ -46,6 +46,11 @@ h3 {
   color: var(--dark-blue);
 }
 
+h4 {
+  color: var(--light-grey);
+  display: block;
+}
+
 a {
   color: var(--dark-blue);
   text-decoration: none;
@@ -55,10 +60,6 @@ a {
 
 a:hover, a:active, a:focus {
   color: var(--light-blue);
-}
-
-span {
-  color: var(--light-grey);
 }
 
 ul {
