@@ -1,5 +1,6 @@
 /* Variables */
 :root {
+  --black: #111;
   --dark-blue: #236ea8;
   --light-blue: #279dbb;
   --light-grey: #707070;
@@ -23,7 +24,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 2;
-  color: #111;
+  color: var(--black);
   padding: 8.4%; /* Roughly A4 */
 }
 
@@ -60,6 +61,10 @@ a {
 
 a:hover, a:active, a:focus {
   color: var(--light-blue);
+}
+
+a:focus {
+  outline: 2px solid var(--black);
 }
 
 ul {
