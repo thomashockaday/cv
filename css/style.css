@@ -32,7 +32,6 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 2;
   color: var(--black);
-  padding: 8.4%; /* Roughly A4 */
 }
 
 h1,
@@ -91,6 +90,12 @@ ul {
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 5%;
   margin-top: 1.2rem;
+}
+
+@media only screen {
+  body {
+    padding: 8.4%;
+  }
 }
 
 @media only screen and (max-width: 950px) {
