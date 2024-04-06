@@ -1,4 +1,3 @@
-/* Variables */
 :root {
   --black: #111;
   --dark-blue: #236ea8;
@@ -6,7 +5,6 @@
   --light-grey: #707070;
 }
 
-/* Simple Reset */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +25,6 @@ html {
   font-size: 1.3vw;
 }
 
-/* Everything Else */
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 2;
