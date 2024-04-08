@@ -1,8 +1,12 @@
 :root {
   --black: #111;
+  --white: #f5f5f5;
   --dark-blue: #236ea8;
   --light-blue: #279dbb;
+  --lighter-blue: #8befef;
+  --dark-grey: #20292f;
   --light-grey: #707070;
+  --lighter-grey: #9b9b9b;
 }
 
 * {
@@ -109,5 +113,25 @@ ul {
   h1,
   .subtitle {
     font-size: 1.8rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-grey);
+    color: var(--white);
+  }
+
+  a {
+    color: var(--lighter-blue);
+  }
+
+  h3,
+  .subtitle {
+    color: var(--light-blue);
+  }
+
+  h4 {
+    color: var(--lighter-grey);
   }
 }
