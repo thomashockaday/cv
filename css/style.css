@@ -35,15 +35,9 @@ body {
   color: var(--black);
 }
 
-h1,
-.subtitle {
+h1 {
   font-size: 2.2rem;
   line-height: 1.6;
-}
-
-.subtitle {
-  color: var(--dark-blue);
-  font-weight: bold;
 }
 
 h2 {
@@ -99,19 +93,24 @@ ul {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only print {
   html {
-    font-size: 16px;
+    font-size: 11pt;
   }
+}
 
+@media only screen and (max-width: 1000px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  html {
+    font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  h1,
-  .subtitle {
+  h1 {
     font-size: 1.8rem;
   }
 }
@@ -126,8 +125,7 @@ ul {
     color: var(--lighter-blue);
   }
 
-  h3,
-  .subtitle {
+  h3 {
     color: var(--light-blue);
   }
 
