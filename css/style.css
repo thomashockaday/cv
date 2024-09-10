@@ -14,17 +14,14 @@
 
 header,
 section,
-footer,
-aside,
 nav,
 main,
-article,
-figure {
+article {
   display: block;
 }
 
 html {
-  font-size: 1.3vw;
+  font-size: 8pt;
 }
 
 body {
@@ -81,14 +78,12 @@ ul {
 }
 
 @media only screen {
+  html {
+    font-size: 1.3vw;
+  }
+
   body {
     padding: 8.4%;
-  }
-}
-
-@media only print {
-  html {
-    font-size: 11pt;
   }
 }
 
