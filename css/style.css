@@ -5,8 +5,6 @@
   --light-blue: #279dbb;
   --lighter-blue: #8befef;
   --dark-grey: #20292f;
-  --light-grey: #707070;
-  --lighter-grey: #9b9b9b;
 }
 
 * {
@@ -47,11 +45,6 @@ h2 {
 h3 {
   font-size: 1.2rem;
   color: var(--dark-blue);
-}
-
-h4 {
-  color: var(--light-grey);
-  display: block;
 }
 
 a {
@@ -127,9 +120,5 @@ ul {
 
   h3 {
     color: var(--light-blue);
-  }
-
-  h4 {
-    color: var(--lighter-grey);
   }
 }
