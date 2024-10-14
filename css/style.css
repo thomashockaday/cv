@@ -26,13 +26,12 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  line-height: 2;
+  line-height: 1.8;
   color: var(--black);
 }
 
 h1 {
   font-size: 2.2rem;
-  line-height: 1.6;
   color: var(--dark-blue);
 }
 
@@ -71,9 +70,19 @@ ul {
   margin-bottom: 1.2rem;
 }
 
+article {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 nav ul li {
@@ -85,16 +94,29 @@ nav ul li:not(:first-child) {
   padding-left: 1.5em;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 5%;
+main {
   margin-top: 1.2rem;
+}
+
+.comma-list {
+  list-style: none;
+}
+
+.comma-list li {
+  display: inline;
+}
+
+.comma-list li:after {
+  content: ",";
+}
+
+.comma-list li:last-child:after {
+  content: "";
 }
 
 @media only screen {
   html {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
   }
 
   body {
@@ -103,12 +125,12 @@ nav ul li:not(:first-child) {
 }
 
 @media only screen and (max-width: 1000px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
   html {
     font-size: 16px;
+  }
+
+  article {
+    max-width: none;
   }
 }
 
