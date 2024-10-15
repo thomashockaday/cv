@@ -44,6 +44,10 @@ h3 {
   font-size: 1.2rem;
 }
 
+h4 {
+  font-size: 1rem;
+}
+
 a {
   color: var(--dark-blue);
   text-decoration: none;
@@ -73,6 +77,10 @@ ul {
 article {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+section {
+  margin: 1.2rem 0;
 }
 
 header {
@@ -112,6 +120,12 @@ main {
 
 .comma-list li:last-child:after {
   content: "";
+}
+
+.skills h3,
+.skills ul {
+  display: inline;
+  font-size: 1rem;
 }
 
 @media only screen {
