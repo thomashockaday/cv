@@ -21,12 +21,12 @@ article {
 }
 
 html {
-  font-size: 7.5pt;
+  font-size: 8.5pt;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  line-height: 1.8;
+  line-height: 1.5;
   color: var(--black);
 }
 
@@ -135,10 +135,11 @@ main {
 
   body {
     padding: 8.4%;
+    line-height: 1.8;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
   html {
     font-size: 16px;
   }
